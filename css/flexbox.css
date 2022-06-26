@@ -1,0 +1,143 @@
+/* -------- Header ----------- */
+
+.headerPrincipal .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* -------- Links menu ----------- */
+
+.headerPrincipal-nav {
+  display: flex;
+}
+
+/* -------- Seccion nuestros cursos ------- */
+
+.contenidoPrincipal-cursos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contenidoPrincipal-cursos-link {
+  display: flex;
+  width: 23%;
+}
+
+/* -------- Seccion de cursos ------- */
+
+.rodapePrincipal-navMap-list {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  flex-wrap: wrap;
+}
+
+/* -------- Seccion video ----------- */
+
+.videoSobre .container {
+  display: flex;
+}
+
+.videoSobre-sobre {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.videoSobre-button {
+  cursor: pointer;
+}
+
+.videoSobre-video {
+  flex-grow: 2;
+  flex-shrink: 2;
+}
+
+.videoSobre-sobre-list {
+  flex-grow: 2;
+}
+
+/* -------- Footer ----------- */
+
+.rodapePrincipal-patrocinadores .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+  width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+  display: flex;
+}
+
+/* ========== Responsive - Mobile =========== */
+
+@media (max-width: 768px) {
+  /* -------- Header / Menu----------- */
+
+  .headerPrincipal .container {
+    flex-direction: column;
+    align-items: initial;
+    text-align: center;
+  }
+
+  .headerPrincipal-nav-link-app {
+    order: -1;
+  }
+
+  .headerPrincipal-nav {
+    flex-direction: column;
+  }
+
+  /* -------- Seccion video ----------- */
+
+  .videoSobre .container {
+    flex-direction: column;
+  }
+
+  /* -------- Seccion cursos----------- */
+
+  .contenidoPrincipal-cursos {
+    flex-direction: column;
+  }
+
+  .contenidoPrincipal-cursos-link {
+    width: 100%;
+  }
+
+  .rodapePrincipal-navMap-list {
+    height: auto;
+    flex-wrap: nowrap;
+  }
+
+  /* -------- Footer ----------- */
+
+  .rodapePrincipal-patrocinadores .container {
+    flex-direction: column;
+  }
+
+  .rodapePrincipal-contatoForm {
+    width: 100%;
+  }
+
+  .rodapePrincipal-patrocinadores-list {
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .rodapePrincipal-contatoForm-fieldset {
+    justify-content: center;
+  }
+}
